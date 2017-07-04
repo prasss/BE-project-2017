@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+
+<STYLE>BODY{COLOR:WHITE}</STYLE>
+<style>body{border:solid 2px;border-color:red;}</style>
+<body BGCOLOR="BLACK">
+
+
+
+
+<h2 class="w3-center"><FONT FACE="ALGERIAN">about <SPAN STYLE="COLOR:RED">us...</SPAN></FONT></h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="http://theiranproject.com/wp-content/uploads/2014/07/Power-transmission-pylons.jpg"  height="350" width="700">
+  <img class="mySlides" src="http://ste.india.com/sites/default/files/2016/09/23/531856-electricity.jpg" height="350" width="700">
+  <img class="mySlides" src="http://b29115924cf54e629aa5-4ff86151a1684680afb5e7ba0d0f4374.r32.cf2.rackcdn.com/vJJ00HzSWp_1395801891497.jpg?rasterSignature=0fd2a2ee3cac5630af862a3b07d97a73&theme=Five%20Seven%20Five&imageFilter=false" width="700" height="350" >
+  <img class="mySlides" src="https://pamthevandotcom.files.wordpress.com/2016/06/tcsj7997-1353301647.jpg" height="350" width="700">
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<p><B><I>"WE ARE HERE TO INCREASE THE TRANSPARENCY BETWEEN THE CUSTOMERS AND THE DEPARTMENT. THIS WILL HELP THE CUSTOMERS TO KEEP THE TRACK OF THEIR DAILY USAGE OF ELECTRICITY. WE WILL PROVIDE TABULAR AS WELL AS GRAPHICAL VIEW TO MAKE IT EASY.AND ALSO HAVE SOME OFFERS IN BETWEEN"</I></B></P>
+</body>
+</html>
